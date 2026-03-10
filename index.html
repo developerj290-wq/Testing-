@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testing Site</title>
+
+<style>
+/* ===== CSS ===== */
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+.container{
+    text-align:center;
+    padding:40px;
+    border-radius:12px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(8px);
+    box-shadow:0 0 20px rgba(0,0,0,0.4);
+}
+
+h1{
+    font-size:50px;
+    letter-spacing:2px;
+    animation:glow 2s infinite alternate;
+}
+
+button{
+    padding:12px 25px;
+    font-size:16px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#00e5ff;
+    color:#000;
+    margin-top:20px;
+}
+
+button:hover{
+    background:#00bcd4;
+}
+
+@keyframes glow{
+    from{
+        text-shadow:0 0 10px #00e5ff;
+    }
+    to{
+        text-shadow:0 0 30px #00e5ff,0 0 40px #00e5ff;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1 id="text">Testing</h1>
+    <p>developerj + DJ BRO</p>
+    <button onclick="changeText()">Click Test</button>
+</div>
+
+<script>
+/* ===== JavaScript ===== */
+
+function changeText(){
+    const text = document.getElementById("text");
+    text.innerText = "Testing Successful!";
+}
+</script>
+
+</body>
+</html>
