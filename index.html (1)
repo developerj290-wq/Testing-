@@ -64,7 +64,7 @@ button:hover{
 
 <div class="container">
     <h1 id="text">Testing</h1>
-    <p>developerj + DJ BRO</p>
+    <p>developerj + DJ gh BRO</p>
     <button onclick="changeText()">Click Test</button>
 </div>
 
@@ -73,7 +73,7 @@ button:hover{
 
 function changeText(){
     const text = document.getElementById("text");
-    text.innerText = "Testing Successful!";
+    text.innerText = "Testing hhdm Successful!";
 }
 </script>
 
